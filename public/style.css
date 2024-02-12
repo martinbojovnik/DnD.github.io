@@ -13,37 +13,65 @@ body {
     width: 100%;
     height: 100%;
     background: var(--black2);
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
 }
-.HexagonWrapper{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@media only screen and (min-width: 768px){
+    .HexagonWrapper{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .BackgroundCS{
+        height: 100%;
+        aspect-ratio: 18/9;
+        position: absolute;
+        filter: brightness(50%);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .Hexagon{
+        width: 45rem;
+        height: 45rem;
+        rotate: 1deg;
+        animation-name: RotateHexagon;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+    }
+    .HexagonText{
+        color: white;
+        font-size: 2.25rem;
+    }
+    .HexagonTextWrapper{
+        margin: 0;
+        position: absolute;
+    }
 }
-.BackgroundCS{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    filter: brightness(50%)
+@media only screen and (max-width: 768px){
+    .HexagonWrapper{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Hexagon{
+        width: 20rem;
+        height: 20rem;
+    }
 }
-.Hexagon{
-    width: 45rem;
-    height: 45rem;
-    rotate: 1deg;
-    animation-name: RotateHexagon;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
+@media only screen and (min-width: 2268px){
+    .BackgroundCS{
+        display: none;
+    }
 }
-.HexagonTextWrapper{
-    position: absolute;
-    margin: 0;
-}
-.HexagonText{
-    color: white;
-    font-size: 2.25rem;
+@media only screen and (max-width: 1440px){
+    .BackgroundCS{
+        display: none;
+    }
 }
 @keyframes RotateHexagon{
     0% {
