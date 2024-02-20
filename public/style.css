@@ -37,10 +37,37 @@ body {
     justify-content: space-between;
     z-index: 2;
 }
+.ContentSpace{
+    width: 100%;
+    aspect-ratio: 19/9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .ContentSpaceMainContent{
     width: 100%;
-    height: 5rem;
-    background: green;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.ContentImage{
+    width: 40%;
+    aspect-ratio: 16/9;
+    border-radius: 0.5rem;
+    border: #ffffff 1px solid;
+}
+.ContentTextWrapper{
+    width: 40%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ContentText{
+    font-size: 2rem;
+    color: #ffffff;
+    margin: 0;
 }
 .DiceWraper{
     height: 100%;
@@ -98,6 +125,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: end;
+    position: absolute;
+    bottom: 50%;
 }
 .GoDown{
     display: flex;
@@ -108,11 +137,7 @@ body {
     z-index: 99;
     cursor: pointer;
     position: absolute ;
-    bottom: 0;
-}
-.ContentSpace{
-    width: 100%;
-    aspect-ratio: 16/9;
+    bottom: 0.5rem;
 }
 @media only screen and (min-width: 768px){
     .HexagonWrapper{
