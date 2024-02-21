@@ -1,2 +1,1 @@
 const App = document.getElementById("App")
-//App.innerHTML = "<div class=\"HexagonWrapper\"><img src=\"public/BackGraund.jpg\" alt=\"\" class=\"BackgroundCS\"><img src=\"public/Hexagon.png\" alt=\"\" class=\"Hexagon\"><div class=\"HexagonTextWrapper\"><p class=\"HexagonText\">DND website is coming soon ...</p></div></div>"
