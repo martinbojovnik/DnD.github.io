@@ -63,11 +63,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 .ContentText{
     font-size: 2rem;
     color: #ffffff;
     margin: 0;
+    text-align: center;
 }
 .DiceWraper{
     height: 100%;
@@ -138,4 +140,20 @@ body {
     cursor: pointer;
     position: absolute ;
     bottom: 0.5rem;
+}
+.ContentTextHedder{
+    font-size: 3rem;
+    color: white;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+.Informations{
+    width: 100;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.InformationText{
+    color: #333333;
 }
