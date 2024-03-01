@@ -66,7 +66,7 @@ body {
     flex-direction: column;
 }
 .ContentText{
-    font-size: 2rem;
+    font-size: 2vw;
     color: #ffffff;
     margin: 0;
     text-align: center;
@@ -138,8 +138,31 @@ body {
     height: 5rem;
     z-index: 99;
     cursor: pointer;
-    position: absolute ;
+    position: absolute;
     bottom: 0.5rem;
+}
+.PlayerDMShowWraper{
+    position: absolute;
+    width: 100%;
+    height: 36rem;
+    bottom: calc(50% - 22rem);
+    z-index: 99999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.PlayerDMWraper{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Placer{
+    height: 100%;
+    width: 35%;
+    border: #ffffff 5px solid;
+    border-radius: 2rem;
 }
 .ContentTextHedder{
     font-size: 3rem;
@@ -156,4 +179,12 @@ body {
 }
 .InformationText{
     color: #333333;
+}
+a{
+    color: #969696;
+    text-decoration: underline;
+}
+.InformationText a{
+    color:rgb(110, 102, 102);
+    text-decoration: underline;
 }
