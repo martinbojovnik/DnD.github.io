@@ -1,190 +1,213 @@
-:root{
-    --black1: #0a0a0a;
-    --black2: #0e0e0e;
-    --balck3: #151515;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+:root {
+  --black1: #0a0a0a;
+  --black2: #0e0e0e;
+  --balck3: #151515;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
-html{
-    scrollbar-width: thin;
-    scrollbar-color: var(--black1) var(--balck3);
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--black1) var(--balck3);
 }
-html::-webkit-scrollbar{
-    width: 0.75rem;
+html::-webkit-scrollbar {
+  width: 0.75rem;
 }
-html::-webkit-scrollbar-thumb{
-    background-color: var(--balck3);
-    border-radius: 1rem;
+html::-webkit-scrollbar-thumb {
+  background-color: var(--balck3);
+  border-radius: 1rem;
 }
-html::-webkit-scrollbar-track{
-    background-color: var(--black1);
+html::-webkit-scrollbar-track {
+  background-color: var(--black1);
 }
 body {
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 .App {
-    width: 100%;
-    height: 100%;
-    background: var(--black2);
-    position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--black2);
+  position: relative;
 }
-.NavBar{
-    width: 100%;
-    height: 15%;
-    display: flex;
-    justify-content: space-between;
-    z-index: 2;
+.NavBar {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
 }
-.ContentSpace{
-    width: 100%;
-    aspect-ratio: 19/9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.ContentSpace {
+  width: 100%;
+  aspect-ratio: 19/9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.ContentSpaceMainContent{
-    width: 100%;
-    height: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.ContentSpaceMainContent {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-.ContentImage{
-    width: 40%;
-    aspect-ratio: 16/9;
-    border-radius: 0.5rem;
-    border: #ffffff 1px solid;
+.ContentImage {
+  width: 40%;
+  aspect-ratio: 16/9;
+  border-radius: 0.5rem;
+  border: #ffffff 1px solid;
 }
-.ContentTextWrapper{
-    width: 40%;
-    height: 10rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.ContentTextWrapper {
+  width: 40%;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.ContentText{
-    font-size: 2vw;
-    color: #ffffff;
-    margin: 0;
-    text-align: center;
+.ContentText {
+  font-size: 2vw;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
 }
-.DiceWraper{
-    height: 100%;
-    width: 10rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
+.DiceWraper {
+  height: 100%;
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
 }
-.Nav{
-    width: 30rem;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 2;
+.Nav {
+  width: 30rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
 }
-.Nav p{
-    color:white;
-    font-size: 1.25rem;
-    cursor: pointer;
-    z-index: 2;
+.Nav p {
+  color: white;
+  font-size: 1.25rem;
+  cursor: pointer;
+  z-index: 2;
 }
-.MainImage{
-    width: 100%;
-    height: 100vh;
-    z-index: 2;
+.MainImage {
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
 }
-.empty{
-    width: 10rem;
-    height: 100%;
-    z-index: 2;
+.empty {
+  width: 10rem;
+  height: 100%;
+  z-index: 2;
 }
-.BrightnessRegul{
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    background: linear-gradient(#000000 0%, #000000 5%, #00000066 100%);
-    z-index: 1;
+.BrightnessRegul {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(#000000 0%, #000000 5%, #00000066 100%);
+  z-index: 1;
 }
-.content{
-    width: 100%;
+.content {
+  width: 100%;
 }
-.MainContentText{
-    color: #ffffff;
-    font-size: 5rem;
-    z-index: 99;
-    margin: 0;
+.MainContentText {
+  color: #ffffff;
+  font-size: 5rem;
+  z-index: 99;
+  margin: 0;
 }
-.TextMainPage{
-    width: 100%;
-    height: 25rem;
-    z-index: 99;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    position: absolute;
-    bottom: 50%;
+.TextMainPage {
+  width: 100%;
+  height: 25rem;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  position: absolute;
+  bottom: 50%;
 }
-.GoDown{
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    width: 100%;
-    height: 5rem;
-    z-index: 99;
-    cursor: pointer;
-    position: absolute;
-    bottom: 0.5rem;
+.GoDown {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 100%;
+  height: 5rem;
+  z-index: 99;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0.5rem;
 }
-.PlayerDMShowWraper{
-    position: absolute;
-    width: 100%;
-    height: 36rem;
-    bottom: calc(50% - 22rem);
-    z-index: 99999999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.PlayerDMShowWraper {
+  position: absolute;
+  width: 100%;
+  height: 36rem;
+  bottom: calc(50% - 22rem);
+  z-index: 99999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.PlayerDMWraper{
-    width: 60%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.PlayerDMWraper {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.Placer{
-    height: 100%;
-    width: 35%;
-    border: #ffffff 5px solid;
-    border-radius: 2rem;
+.Placer {
+  height: 100%;
+  width: 35%;
+  border: #ffffff 5px solid;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: space-around;
 }
-.ContentTextHedder{
-    font-size: 3rem;
-    color: white;
-    margin: 0;
-    margin-bottom: 1rem;
+.RulesIconImage {
+  width: 80%;
+  aspect-ratio: 16/9;
 }
-.Informations{
-    width: 100;
-    height: 6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.RulesMainName {
+  font-size: 3.25rem;
+  width: 100%;
+  color: white;
+  text-align: center;
+  margin: 0;
 }
-.InformationText{
-    color: #333333;
+.RulesMainText {
+  margin: 0;
+  font-size: 1.75rem;
+  color: white;
+  text-align: center;
 }
-a{
-    color: #969696;
-    text-decoration: underline;
+.ContentTextHedder {
+  font-size: 3rem;
+  color: white;
+  margin: 0;
+  margin-bottom: 1rem;
 }
-.InformationText a{
-    color:rgb(110, 102, 102);
-    text-decoration: underline;
+.Informations {
+  width: 100;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.InformationText {
+  color: #333333;
+}
+a {
+  color: #969696;
+  text-decoration: underline;
+}
+.InformationText a {
+  color: rgb(110, 102, 102);
+  text-decoration: underline;
 }
