@@ -25,39 +25,90 @@
             />
           </div>
           <div class="Nav">
-            <p>Home</p>
-            <p>Fotos</p>
-            <p style="text-decoration: underline">Rules</p>
-            <p>Dices</p>
+            <p id="Home">Home</p>
+            <div class="RulesDropdownWrapper">
+              <p id="Fotos">Fotos</p>
+              <div class="DropDownBar notvisible" id="DDM">
+                <p id="Rules-Rules">Monsters</p>
+                <p id="Rules-Player">Classes</p>
+              </div>
+            </div>
+            <p id="Rules" style="text-decoration: underline">Rules</p>
+            <p id="Dices">Dices</p>
           </div>
           <div class="empty"></div>
         </div>
         <div class="PlayerDMShowWraper">
           <div class="PlayerDMWraper">
             <div class="Placer">
-              <img
-                src="./public/BackGraund.jpg"
-                alt="img"
-                class="RulesIconImage"
-              />
-              <p class="RulesMainName">Dungeon Master</p>
+              <div>
+                <img
+                  src="./public/BackGraund.jpg"
+                  alt="img"
+                  class="RulesIconImage"
+                />
+                <p class="RulesMainName">Dungeon Master</p>
+              </div>
               <p class="RulesMainText">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Adipisci deserunt recusandae inventore cupiditate at natus
-                asperiores corporis laboriosam.
+                The DM creates an adventure that players participate in.
               </p>
             </div>
             <div class="Placer">
-              <img
-                src="./public/BackGraund.jpg"
-                alt="img"
-                class="RulesIconImage"
-              />
-              <p class="RulesMainName">Dungeon Master</p>
+              <div>
+                <svg
+                  width="200"
+                  height="200"
+                  viewBox="0 0 52.916665 52.916666"
+                  version="1.1"
+                  id="svg1"
+                  inkscape:export-filename="bitmap.svg"
+                  inkscape:export-xdpi="96"
+                  inkscape:export-ydpi="96"
+                  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:svg="http://www.w3.org/2000/svg"
+                >
+                  <sodipodi:namedview
+                    id="namedview1"
+                    pagecolor="#505050"
+                    bordercolor="#ffffff"
+                    borderopacity="1"
+                    inkscape:showpageshadow="0"
+                    inkscape:pageopacity="0"
+                    inkscape:pagecheckerboard="1"
+                    inkscape:deskcolor="#505050"
+                    inkscape:document-units="mm"
+                  />
+                  <defs id="defs1" />
+                  <g
+                    inkscape:label="Layer 1"
+                    inkscape:groupmode="layer"
+                    id="layer1"
+                  >
+                    <circle
+                      style="fill: #ffffff; stroke-width: 0.633436"
+                      id="path1"
+                      cx="26.857872"
+                      cy="14.000833"
+                      r="12.5"
+                    />
+                    <ellipse
+                      style="fill: #ffffff; stroke-width: 0.589257"
+                      id="path2"
+                      cx="26.538639"
+                      cy="40.088089"
+                      rx="25.000324"
+                      ry="12.460388"
+                    />
+                  </g>
+                </svg>
+
+                <p class="RulesMainName">Player</p>
+              </div>
               <p class="RulesMainText">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Adipisci deserunt recusandae inventore cupiditate at natus
-                asperiores corporis laboriosam.
+                Players create a character and move through the story that the
+                Dungeon Master (DM) creates.
               </p>
             </div>
           </div>
@@ -65,7 +116,11 @@
         <div class="BrightnessRegul"></div>
       </div>
       <div class="content">
-        <div class="ContentSpace" style="background: #0e0e0e" id="ScrollTarget">
+        <div
+          class="ContentSpace"
+          style="background: #0e0e0e"
+          id="Rules-Rules-Scroll"
+        >
           <div class="ContentSpaceMainContent">
             <img src="./public/BackGraund.jpg" alt="img" class="ContentImage" />
             <div class="ContentTextWrapper">
@@ -99,7 +154,11 @@
             <img src="./public/BackGraund.jpg" alt="img" class="ContentImage" />
           </div>
         </div>
-        <div class="ContentSpace" style="background: #0e0e0e">
+        <div
+          class="ContentSpace"
+          style="background: #0e0e0e"
+          id="Rules-Player-Scroll"
+        >
           <div class="ContentSpaceMainContent">
             <img src="./public/BackGraund.jpg" alt="img" class="ContentImage" />
             <div class="ContentTextWrapper">
@@ -114,7 +173,11 @@
             </div>
           </div>
         </div>
-        <div class="ContentSpace" style="background: #0a0a0a">
+        <div
+          class="ContentSpace"
+          style="background: #0a0a0a"
+          id="Rules-DM-Scroll"
+        >
           <div class="ContentSpaceMainContent">
             <div class="ContentTextWrapper">
               <p class="ContentTextHedder">Creating a story</p>
