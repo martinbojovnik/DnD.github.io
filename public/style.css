@@ -139,7 +139,6 @@ body {
   width: 100%;
   height: 5rem;
   z-index: 99;
-  cursor: pointer;
   position: absolute;
   bottom: 0.5rem;
 }
@@ -241,7 +240,7 @@ a {
   display: none !important;
 }
 .RulesDropdownWrapper {
-  width: 4rem;
+  width: 7rem;
 }
 .ImageWrapper {
   width: 100%;
@@ -312,6 +311,68 @@ a {
   border-radius: 50%;
   margin: 0.5rem;
 }
+body {
+  background: black;
+}
+.dicerollTable {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  border: 1px #fff solid;
+  overflow: hidden;
+  background: #00000099;
+}
+.dicerollTable * {
+  font-size: 1.5rem;
+}
+.DiceRollEnterTable {
+  width: 100%;
+  height: 10%;
+  border: 1px #fff solid;
+  overflow: hidden;
+}
+.DiceRollEnterTable input {
+  width: 100%;
+  height: 100%;
+  background: #24242499;
+  border: none;
+  color: white;
+  text-align: center;
+}
+.DiceRollMain {
+  width: 100%;
+  height: 90%;
+  border: 1px #fff solid;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.DiceRollMainPart {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  border: 1px #fff solid;
+}
+.DiceRollMainPart p {
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+.VidoeSpace {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.VidoeSpace p {
+  color: white;
+  font-size: 3rem;
+  margin: 0.5rem;
+}
+iframe {
+  border-radius: 1.5rem;
+}
+
 @keyframes Open {
   0% {
     max-height: 0;
