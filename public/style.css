@@ -375,7 +375,7 @@ body {
 iframe {
   border-radius: 1.5rem;
 }
-.GalleryTextWraper @keyframes Open {
+@keyframes Open {
   0% {
     max-height: 0;
   }
