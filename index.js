@@ -153,6 +153,14 @@ function Reassign_Values_Gallery() {
   });
 }
 
+document.addEventListener("keyup", function (event) {
+  if (event.key === "ArrowLeft") {
+    ChangeImageSelecor(-1);
+  } else if (event.key === "ArrowRight") {
+    ChangeImageSelecor(1);
+  }
+});
+
 //? ############################# Dice declaration ################################
 
 function switchScreans() {
@@ -211,7 +219,7 @@ SetUpImageSelector(ClassArray);
 function ChangeImageSelecor(dir) {
   index = index + dir;
   if (index < 0) {
-    index = 0;
+    index = max;
   } else if (index > max) {
     index = 0;
   }
